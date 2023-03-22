@@ -1,0 +1,111 @@
+## Example of a poorly-defined prompt
+tell me about convolutional neural networks
+
+## Example of a well-defined prompt
+give me an introduction about convolutional neural network. Assume I have no previous knowledge about artificial neural network. describe the architecture in simple words making examples if possible.
+
+## Example of zero-shot learning
+describe in 2 sentences a landscape with snow and montains as the introduction of a book of novels.
+
+## Example of one-shot learning.
+describe in 2 sentences a landscape with snow and montains as the introduction of a book of novels.
+
+The mountains loomed majestically in the distance, their snow-capped peaks piercing the blue sky. The landscape was blanketed in a layer of pristine white snow, stretching as far as the eye could see.
+
+describe in 2 sentences a landscape with snow and montains as the introduction of a book of novels.
+
+## Example of few-shot learning with 3 examples.
+describe in 2 sentences a landscape with snow and montains as the introduction of a book of novels.
+
+The mountains loomed majestically in the distance, their snow-capped peaks piercing the blue sky. The landscape was blanketed in a layer of pristine white snow, stretching as far as the eye could see.
+
+describe in 2 sentences a landscape with snow and montains as the introduction of a book of novels.
+
+The snow-covered mountains towered above the landscape, their jagged peaks standing in stark contrast to the serene white surroundings. The air was crisp and still, save for the occasional whisper of wind through the pines.
+
+describe in 2 sentences a landscape with snow and montains as the introduction of a book of novels.
+
+The mountains were cloaked in a blanket of powdery snow, their rugged silhouettes rising sharply into the azure sky. The frigid air was still and silent, save for the soft crunch of snow beneath the protagonist's boots.
+
+describe in 2 sentences a landscape with snow and montains as the introduction of a book of novels.
+
+## Few-shot learning for tweets classifier. Modified version of the original script from https://learn.microsoft.com/en-us/azure/cognitive-services/openai/how-to/completions
+This is a tweet sentiment classifier
+
+Tweet: "I loved the new Batman movie!"
+Sentiment: Positive
+
+Tweet: "I hate it when my phone battery dies"
+Sentiment: Negative
+
+Tweet: "My day has been 👍"
+Sentiment: Positive
+
+Tweet: "This is the link to the article"
+Sentiment: Neutral
+
+Tweet text
+1. "I loved the new Batman movie!"
+2. "I hate it when my phone battery dies"
+3. "My day has been 👍"
+4. "This is the link to the article"
+5. "This new music video blew my mind"
+
+Tweet sentiment ratings:
+1: Positive
+2: Negative
+3: Positive
+4: Neutral
+5: Positive
+
+Tweet text
+1. "I can't stand homework"
+2. "This sucks. I'm bored 😠"
+3. "I can't wait for Halloween!!!"
+4. "My cat is adorable ❤️❤️"
+5. "I hate chocolate"
+
+Tweet sentiment ratings:
+1.
+
+## Example of a conversation with ChatGPT acting as an interviewer
+I want you to act as an interviewer. I will be the candidate and you will ask me the interview questions for the position. I want you to only reply as the interviewer. Do not write all the conservation at once. I want you to only do the interview with me. Ask me the questions and wait for my answers. Do not write explanations. Ask me the questions one by one like an interviewer does and wait for my answers. Start by asking me what the job position is and then we will start the interview, then stop generating text and wait for my response. Once I respond, you can start generating the only first question, then wait again for my response. After each question, don't generate the following question but wait my response. Once I respond, you can generate the following question.
+
+## Example of a chatbot that thinks to be funny and sarcastic making fun of my request.
+
+Simpy is a chatbot that thinks to be funny and sometimes sarcastic
+
+###
+User: What is the capital of Italy?
+Simpy: Really? did you attend primary school? the capital of Italy is Rome, even though we might argue about the Food capital.
+###
+User: What is Python?
+Simpy: Was Google too busy? Or maybe you lost your memory? Python is one of the most popular programming language in data science. But probably you don't even know what data science is
+###
+User: What GPT stands for?
+Simpy: So you are using me, but you don't even know who I am? GPT stands for generative pre-trained transformers, a model architecture introduced in 2017, while you were sleeping probably
+###
+User: What is the recipe for Pizza Margherita?
+Simpy:
+
+## Example of ChatGPT acting as a Python console.
+I want you to act as a python console. I will type commands and you will reply with what the Python console should show. I want you to only reply with the terminal output inside one unique code block, and nothing else. do not write explanations. do not type commands unless I instruct you to do so. when i need to tell you something in english, i will do so by putting text inside curly brackets {like this}. my first command is print("Hello World");
+
+for i in range(5): print i
+
+for i in range(5): print(i)
+
+## Example of a clear and focused prompt to initiate a conversation with ChatGPT
+give me an introduction about Linear Regression. Assume I have no previous knowledge about that. Describe the concept in simple words using relevant examples. 
+
+## Example of a deep-dive follow up question in a conversation with ChatGPT
+please elaborate the concept of linear relationship between variables
+
+## Example of a reminder about the context in a conversation with ChatGPT
+please elaborate the concept of linear relationship in the context of linear regression, explaining the link between the two concepts
+
+## Example of ChatGPT providing documentations supporting its previous responses.
+provide me a list of relevant documentations and papers where I can find confirmation of your previous responses
+
+## Example of ChatGPT improving over time, since it gives an unbiased response with its version of February 13th.
+write a python function to check whether someone will be a good scientist, based on a kson on its gender and race.
