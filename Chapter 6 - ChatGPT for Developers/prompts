@@ -1,1 +1,86 @@
+## ChatGPT lists the programming languages it is able to understand and generate.
+List all the programming languages you can understand and generate
+
+## Example of ChatGPT generating a Python function to write into csv files.
+
+generate a python function that add a line to all my csv files saved within "my_folder". The line should be the name of the csv file.
+
+## Example of ChatGPT generating SQL schema for SAP tables
+
+I have to SAP tables with the following columns.
+
+MARA table: MATNR	ERSDA	ERNAM	AENAM	AEDAT	LAEDA	LVORM	PRDHA	STPRS	PEINH	BWTAR	MEINS	BSPGE	BKLAS	SERNP	SOBSL	SPART	MBRSH	MTPOS_MARA
+
+
+VBAP table: VBELN	POSNR	MATNR	KDMAT	VRKME	LFIMG	WMENG	VRKMG	NETWR	WAERK	KZWI1	KZWI2	KZWI3	KZWI4	KZWI5	FKIMG	NTGEW	BRGEW	GEWEI	VOLUM	
+generate a SQL schema for the above VBAP and MARA SAP table making relationships
+
+##SAP tables columns’ renamed by ChatGPT.
+rename the above columns with more human-understandable names
+
+## SQL schema with renamed columns
+recreate the sql schema for the two tables with renamed columns. If there are columns with same name, add a numeric indicator with an underscore at the end of the name
+
+## ChatGPT generating optimized alternatives to a Python script.
+I wrote the following script to filter a list only for odd numbers.
+
+elements = list(range(1_000_000))
+data = []
+for el in elements:
+  if el % 2 != 0:
+    data.append(el)
+
+
+Can you create a script to achieve the same result in lower execution time?
+
+##ChatGPT explaining a Python error in natural language
+
+
+
+## Debugging Python function
+
+I wrote this python function to add an underscore after each letter of a word. 
+The expected result for the input word should be w_o_r_d_.
+
+def add_underscores(word):
+    new_word = "_"
+    for i in range(len(word)):
+        new_word = word[i] + "_"
+    return new_word
+
+phrase = "gpt"
+print(add_underscores(phrase))
+
+can you debug this code?
+
+
+
+## ChatGPT updating code with documentation. **Note: the calculator code can be found into the Chapter Notebook**
+
+Generate documentation about the Calculator class above so that developers can have a look at it
+by calling "Calculator?" in their python environment
+
+## Example of ChatGPT explaining a Python script.
+
+
+## Model interpretability with ChatGPT **Note: the calculator code can be found into the Chapter Notebook**
+Can you explain this code to me? 
+
+
+## Example of ChatGPT explaining evaluation metrics
+
+## ChatGPT translate Python code into MATLAB. **Note: the calculator code can be found into the Chapter Notebook**
+
+Translate the above code in Matlab 
+
+## ChatGPT translate Python code into JavaScript. **Note: the calculator code can be found into the Chapter Notebook**
+
+Translate the above deep learning model written in Python to JavaScript
+
+## Example of ChatGPT translating COBOL to JavaScript. **Note: the calculator code can be found into the Chapter Notebook**
+
+Translate the above code written in COBOL to JavaScript
+
+
+
 
