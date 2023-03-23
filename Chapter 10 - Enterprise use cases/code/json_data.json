@@ -1,0 +1,12 @@
+{
+    "name": "Mario Rossi",
+    "reason_for_calling": "To report a dent on the side of his car",
+    "policy_number": "123456",
+    "resolution": "The operator helped file a claim and connect the customer with a trusted repair shop in the area.",
+    "initial_sentiment": "Frustration",
+    "reason_for_initial_sentiment": "The customer was frustrated because he did not know how the dent got there and there were no witnesses around.",
+    "final_sentiment": "Satisfaction",
+    "reason_for_final_sentiment": "The customer was satisfied because the operator was able to help him file a claim and connect him with a trusted repair shop.",
+    "contact_center_improvement": "The customer would like the contact center to value his time more and not keep him on hold for long periods of time.",
+    "category": "Claim Handling"
+}
