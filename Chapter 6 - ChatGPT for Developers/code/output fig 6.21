@@ -1,0 +1,40 @@
+// Load the MNIST dataset
+const data = tf.data.generator(function() {
+  return {value: tf.nextFrame(tf.tensor([mnist.nextTrainBatch(128)]))};
+});
+
+// Preprocess the data
+const trainData = data.take(10000).map(x => {
+  return {x: x.value.reshape([128, 28 * 28]).div(255), y: tf.oneHot(x.value.labels, 10)};
+});
+const testData = data.skip(10000).map(x => {
+  return {x: x.value.reshape([128, 28 * 28]).div(255), y: tf.oneHot(x.value.labels, 10)};
+});
+
+// Define the model architecture
+const model = tf.sequential({
+  layers: [
+    tf.layers.dense({units: 256, inputShape: [28 * 28], activation: 'relu'}),
+    tf.layers.dense({units: 128, activation: 'relu'}),
+    tf.layers.dense({units: 10, activation: 'softmax'})
+  ]
+});
+
+// Specify the training options
+const optimizer = tf.train.adam();
+const loss = 'categoricalCrossentropy';
+const metrics = ['accuracy'];
+const batchSize = 128;
+const epochs = 10;
+const validationSplit = 0.1;
+const shuffle = true;
+const verbose = 1;
+const fitArgs = {optimizer, loss, metrics, batchSize, epochs, validationSplit, shuffle, verbose};
+
+// Train the model
+model.fitDataset(trainData, fitArgs);
+
+// Evaluate the model
+const evalArgs = {batchSize: 128};
+const evalResult = model.evaluateDataset(testData, evalArgs);
+console.log(`Test loss: ${evalResult[0].dataSync()[0].toFixed(2)}, accuracy: ${evalResult[1].dataSync()[0].toFixed(2)}`);
