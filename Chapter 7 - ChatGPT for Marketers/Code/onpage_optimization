@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Website Title</title>
+  <meta name="description" content="A concise and compelling description of your website.">
+</head>
+<body>
+  <header>
+    <h1>Your Website Heading</h1>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home">
+    <h2>Welcome to Your Website!</h2>
+    <p>Engaging and keyword-rich content that describes your website and its purpose goes here.</p>
+    <img src="your-image.jpg" alt="Description of the image">
+  </section>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>Provide relevant information about your background, expertise, and unique selling points.</p>
+  </section>
+
+  <section id="services">
+    <h2>Our Services</h2>
+    <ul>
+      <li>Service 1</li>
+      <li>Service 2</li>
+      <li>Service 3</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Include your contact details and a contact form for visitors to reach out to you.</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2023 Your Website. All rights reserved.</p>
+  </footer>
+</body>
+</html>
