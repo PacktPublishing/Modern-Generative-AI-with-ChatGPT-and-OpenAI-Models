@@ -61,6 +61,9 @@ With the following software and hardware list you can run all code files present
 |  	1-11	   | Azure OpenAI Service | Azure Account Subscription enabled for Azure OpenAI | 		
 
 
+We also provide a PDF file that has color images of the screenshots/diagrams used in this book. [Click here to download it](https://packt.link/YFTZk).
+
+
 
 ### Related products <Other books you may enjoy>
 * Exploring GPT-3  [[Packt]](https://www.packtpub.com/product/exploring-gpt-3/9781800563193) [[Amazon]](https://www.amazon.com/Exploring-GPT-3-unofficial-general-purpose-processing/dp/1800563191/ref=sr_1_1?keywords=Exploring+GPT-3&s=books&sr=1-1)
